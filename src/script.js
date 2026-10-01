@@ -63,12 +63,8 @@ const atletas = [
     
 
 ];
-
-const containerAntiga =
-    document.getElementById("antiga-geracao");
-
-const containerNova =
-    document.getElementById("nova-geracao");
+const containerAntiga = document.getElementById("antiga-geracao");
+const containerNova = document.getElementById("nova-geracao");
 
 function criarCard(atleta, geracao) {
 
@@ -97,11 +93,9 @@ function criarCard(atleta, geracao) {
                 w-full
                 h-full
                 object-cover
-
                 transition-transform
                 duration-500
                 ease-out
-
                 group-hover:scale-110
             "
         >
@@ -114,12 +108,11 @@ function criarCard(atleta, geracao) {
                 from-slate-950
                 via-slate-950/20
                 to-transparent
-
                 opacity-40
                 group-hover:opacity-90
-
                 transition-opacity
                 duration-300
+                card-overlay
             ">
         </div>
 
@@ -130,12 +123,11 @@ function criarCard(atleta, geracao) {
                 left-0
                 right-0
                 p-4
-
                 translate-y-3
                 group-hover:translate-y-0
-
                 transition-transform
                 duration-300
+                card-content
             ">
 
             <p
@@ -151,9 +143,9 @@ function criarCard(atleta, geracao) {
 
                     opacity-0
                     group-hover:opacity-100
-
                     transition-opacity
                     duration-300
+                    card-category
                 ">
 
                 ${atleta.categoria}
@@ -176,9 +168,35 @@ function criarCard(atleta, geracao) {
         </div>
     `;
 
+    // ==========================================
+    // MOBILE: TOQUE PARA ATIVAR O CARD
+    // ==========================================
+
+    card.addEventListener("click", () => {
+
+        if (window.innerWidth >= 640) {
+            return;
+        }
+
+        document.querySelectorAll(".card-active").forEach(outroCard => {
+
+            if (outroCard !== card) {
+                outroCard.classList.remove("card-active");
+            }
+
+        });
+
+        card.classList.toggle("card-active");
+
+    });
+
     return card;
 }
 
+
+// ==========================================
+// CRIA OS CARDS
+// ==========================================
 
 atletas.forEach(atleta => {
 
@@ -193,42 +211,44 @@ atletas.forEach(atleta => {
 });
 
 
+// ==========================================
+// NAVBAR
+// ==========================================
+
 const navbar = document.getElementById("navbar");
 
 window.addEventListener("scroll", () => {
-    if (window.scrollY > 20) {
-        // Fixa no topo
-        navbar.classList.remove("absolute");
-        navbar.classList.add("fixed");
 
-        // Aparência quando está fixo
+    if (window.scrollY > 20) {
+
         navbar.classList.remove(
+            "absolute",
             "bg-transparent",
             "border-transparent"
         );
 
         navbar.classList.add(
+            "fixed",
             "bg-slate-900",
             "border-slate-800",
             "shadow-lg"
         );
 
     } else {
-        // Volta para o estado original
-        navbar.classList.remove("fixed");
 
-        navbar.classList.add("absolute");
-
-        // Aparência original
         navbar.classList.remove(
+            "fixed",
             "bg-slate-900",
             "border-slate-800",
             "shadow-lg"
         );
 
         navbar.classList.add(
+            "absolute",
             "bg-transparent",
             "border-transparent"
         );
+
     }
+
 });
