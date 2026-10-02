@@ -20,82 +20,90 @@
 
 </head>
 
-
 <body class="bg-slate-50 text-slate-700">
-
-
     <!-- ========================================================= -->
     <!-- HERO -->
     <!-- ========================================================= -->
-
     <header class="relative bg-slate-900 text-blue-50 overflow-hidden">
-
         <!-- Brilho de fundo -->
-
         <div class="absolute inset-0 opacity-20
                    bg-[radial-gradient(circle_at_30%_20%,theme(colors.amber.400),transparent_60%)]">
         </div>
-
-
         <!-- ===================================================== -->
         <!-- NAVBAR -->
         <!-- ===================================================== -->
-
-<nav id="navbar"
-    class="absolute top-0 left-0 right-0 z-50
+        <nav id="navbar" class="absolute top-0 left-0 right-0 z-50
            bg-transparent
            border-b border-transparent
            transition-all duration-300 ease-out">
 
-    <div class="max-w-6xl mx-auto
+            <div class="max-w-6xl mx-auto
                 flex items-center justify-between
                 px-6 py-4">
 
-        <a href="#"
-           class="font-bold tracking-wide
+                <!-- LOGO -->
+
+                <a href="#" class="font-bold tracking-wide
                   text-amber-400
                   hover:text-amber-300
                   transition-colors">
 
-            MATINHOS · PR
+                    MATINHOS · PR
 
-        </a>
+                </a>
 
-        <div class="hidden sm:flex
-                    items-center gap-6
+
+                <!-- MENU -->
+
+                <div class="hidden sm:flex
+                    items-center gap-7
                     text-sm font-medium
                     text-blue-100">
 
-            <a href="#documentario"
-               class="hover:text-amber-400 transition-colors">
-                Documentário
-            </a>
+                    <!-- DOCUMENTÁRIO -->
 
-            <a href="#pico"
-               class="hover:text-amber-400 transition-colors">
-                O Pico
-            </a>
+                    <a href="#documentario" class="hover:text-amber-400
+                      transition-colors">
 
-            <a href="#nomes"
-               class="hover:text-amber-400 transition-colors">
-                Ídolos
-            </a>
+                        Documentário
 
-            <a href="#hoje"
-               class="hover:text-amber-400 transition-colors">
-                Hoje
-            </a>
-
-        </div>
-
-    </div>
-</nav>
+                    </a>
 
 
+                    <!-- O PICO -->
+
+                    <a href="#pico" class="hover:text-amber-400
+                      transition-colors">
+
+                        O Pico
+
+                    </a>
+
+
+                    <!-- GERAÇÕES -->
+
+                    <a href="#antiga-geracao" class="hover:text-amber-400
+                      transition-colors">
+
+                        Gerações
+
+                    </a>
+
+                    <a href="#projeto" class="hover:text-amber-400 transition-colors">
+
+                        Projeto
+
+                    </a>
+
+
+                </div>
+
+            </div>
+
+        </nav>
         <!-- ===================================================== -->
         <!-- HERO -->
         <!-- ===================================================== -->
-
         <div class="relative max-w-4xl mx-auto
                    px-6 pt-32 sm:pt-36 pb-24
                    text-center">
@@ -134,12 +142,9 @@
             </p>
 
         </div>
-
-
         <!-- ===================================================== -->
         <!-- ONDA -->
         <!-- ===================================================== -->
-
         <div class="relative">
 
             <svg viewBox="0 0 1440 100" class="block w-full h-20 sm:h-24" preserveAspectRatio="none">
@@ -166,15 +171,10 @@
             </div>
 
         </div>
-
     </header>
-
-
-
     <!-- ========================================================= -->
     <!-- DOCUMENTÁRIO -->
     <!-- ========================================================= -->
-
     <section id="documentario" class="relative bg-slate-50 overflow-hidden">
 
         <div class="max-w-5xl mx-auto
@@ -203,7 +203,8 @@
                            text-slate-900
                            leading-tight">
 
-                    A história do surfe em Matinhos
+                    
+Pico de Matinhos: O berço do surfe paranaense
 
                 </h2>
 
@@ -324,13 +325,9 @@
         </div>
 
     </section>
-
-
-
     <!-- ========================================================= -->
     <!-- O PICO -->
     <!-- ========================================================= -->
-
     <section id="pico" class="bg-slate-900
                text-blue-50
                overflow-hidden">
@@ -343,7 +340,7 @@
             <!-- CABEÇALHO -->
             <!-- ================================================= -->
 
-            <div class="max-w-3xl mb-12">
+            <div class="max-w-3xl mb-12 mt-5">
 
                 <p class="text-sm
                            font-bold
@@ -362,7 +359,7 @@
                            text-white
                            leading-tight">
 
-                    Onde a história acontece
+                    A melhor direita do Brasil
 
                 </h2>
 
@@ -381,12 +378,218 @@
             </div>
 
 
+            <!-- ================================================= -->
+            <!-- GALERIA DO PICO -->
+            <!-- ================================================= -->
+
+            <div class="mt-16">
+
+
+                <div class="grid
+                           grid-cols-1
+                           md:grid-cols-2
+                           gap-5">
+
+
+                    <!-- FOTO PRINCIPAL -->
+
+                    <div class="group relative
+                               md:row-span-2
+                               min-h-[420px]
+                               overflow-hidden
+                               rounded-2xl
+                               border border-white/10
+                               bg-slate-800">
+
+                        <img src="./src/img/pico.png" alt="Pico de Matinhos visto da praia" class="absolute inset-0
+                                   w-full h-full
+                                   object-cover
+                                   transition duration-700
+                                   group-hover:scale-105">
+
+                        <div class="absolute inset-0
+                                   bg-gradient-to-t
+                                   from-slate-950/90
+                                   via-slate-950/20
+                                   to-transparent">
+                        </div>
+
+                        <div class="absolute
+                                   bottom-0
+                                   left-0
+                                   right-0
+                                   p-6">
+
+                            <span class="inline-block
+                                       text-xs
+                                       font-bold
+                                       uppercase
+                                       tracking-widest
+                                       text-amber-400
+                                       mb-2">
+
+                                Matinhos · PR
+
+                            </span>
+
+
+                            <h3 class="text-2xl
+                                       font-bold
+                                       text-white">
+
+                                O Pico dos Surfistas
+
+                            </h3>
+
+
+                            <p class="mt-2
+                                       text-sm
+                                       text-blue-100/80">
+
+                                Um dos cenários mais marcantes do
+                                surfe paranaense.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- FOTO 2 -->
+
+                    <div class="group relative
+                               h-[250px]
+                               overflow-hidden
+                               rounded-2xl
+                               border border-white/10
+                               bg-slate-800">
+
+                        <img src="./src/img/ondas.png" alt="Surfista surfando no Pico de Matinhos" class="w-full h-full
+                                   object-cover
+                                   transition duration-700
+                                   group-hover:scale-105">
+
+                        <div class="absolute inset-0
+                                   bg-gradient-to-t
+                                   from-slate-950/80
+                                   via-transparent
+                                   to-transparent">
+                        </div>
+
+                        <div class="absolute
+                                   bottom-0
+                                   left-0
+                                   p-5">
+
+                            <p class="text-sm
+                                       font-semibold
+                                       text-white">
+
+                                Nas ondas do Pico
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- FOTO 3 -->
+
+                    <div class="group relative
+                               h-[250px]
+                               overflow-hidden
+                               rounded-2xl
+                               border border-white/10
+                               bg-slate-800">
+
+                        <img src="./src/img/surfistas.png" alt="Surfistas no Pico de Matinhos" class="w-full h-full
+                                   object-cover
+                                   transition duration-700
+                                   group-hover:scale-105">
+
+                        <div class="absolute inset-0
+                                   bg-gradient-to-t
+                                   from-slate-950/80
+                                   via-transparent
+                                   to-transparent">
+                        </div>
+
+                        <div class="absolute
+                                   bottom-0
+                                   left-0
+                                   p-5">
+
+                            <p class="text-sm
+                                       font-semibold
+                                       text-white">
+
+                                Gerações de surfistas
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================================================= -->
+            <!-- FRASE FINAL -->
+            <!-- ================================================= -->
+
+            <div class="mt-10
+                       flex flex-col
+                       sm:flex-row
+                       sm:items-center
+                       sm:justify-between
+                       gap-4
+                       border-t
+                       border-white/10
+                       pt-6">
+
+                <p class="text-sm text-blue-100/60">
+
+                    Pico de Matinhos · Praia Central
+
+                </p>
+
+
+                <div class="flex items-center gap-2">
+
+                    <span class="w-8 h-px
+                               bg-amber-400">
+                    </span>
+
+                    <span class="text-xs
+                               uppercase
+                               tracking-widest
+                               font-semibold
+                               text-amber-400">
+
+                        Surfe · Cultura · História
+
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
 
             <!-- ================================================= -->
             <!-- ANTIGA GERAÇÃO -->
             <!-- ================================================= -->
 
-            <div class="mb-16">
+            <div class="mb-16 mt-16">
 
 
                 <!-- Título -->
@@ -562,201 +765,580 @@
 
 
 
-            <!-- ================================================= -->
-            <!-- GALERIA DO PICO -->
-            <!-- ================================================= -->
 
-            <div class="mt-16">
+        </div>
 
+    </section>
+    <!-- ========================================================= -->
+    <!-- NOMES -->
+    <!-- ========================================================= -->
 
-                <div class="grid
-                           grid-cols-1
-                           md:grid-cols-2
-                           gap-5">
+    <!-- ========================================================= -->
+    <!-- SOBRE O PROJETO -->
+    <!-- ========================================================= -->
 
+    <section id="projeto" class="relative bg-slate-50 overflow-hidden">
 
-                    <!-- FOTO PRINCIPAL -->
+        <!-- detalhe decorativo -->
 
-                    <div class="group relative
-                               md:row-span-2
-                               min-h-[420px]
-                               overflow-hidden
-                               rounded-2xl
-                               border border-white/10
-                               bg-slate-800">
-
-                        <img src="./src/img/pico.png" alt="Pico de Matinhos visto da praia" class="absolute inset-0
-                                   w-full h-full
-                                   object-cover
-                                   transition duration-700
-                                   group-hover:scale-105">
-
-                        <div class="absolute inset-0
-                                   bg-gradient-to-t
-                                   from-slate-950/90
-                                   via-slate-950/20
-                                   to-transparent">
-                        </div>
-
-                        <div class="absolute
-                                   bottom-0
-                                   left-0
-                                   right-0
-                                   p-6">
-
-                            <span class="inline-block
-                                       text-xs
-                                       font-bold
-                                       uppercase
-                                       tracking-widest
-                                       text-amber-400
-                                       mb-2">
-
-                                Matinhos · PR
-
-                            </span>
+        <div class="absolute top-0 left-1/2
+                -translate-x-1/2
+                w-32 h-1
+                bg-gradient-to-r
+                from-amber-400
+                via-yellow-300
+                to-amber-400
+                rounded-full">
+        </div>
 
 
-                            <h3 class="text-2xl
-                                       font-bold
-                                       text-white">
-
-                                O Pico dos Surfistas
-
-                            </h3>
-
-
-                            <p class="mt-2
-                                       text-sm
-                                       text-blue-100/80">
-
-                                Um dos cenários mais marcantes do
-                                surfe paranaense.
-
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-
-                    <!-- FOTO 2 -->
-
-                    <div class="group relative
-                               h-[250px]
-                               overflow-hidden
-                               rounded-2xl
-                               border border-white/10
-                               bg-slate-800">
-
-                        <img src="./src/img/ondas.png" alt="Surfista surfando no Pico de Matinhos" class="w-full h-full
-                                   object-cover
-                                   transition duration-700
-                                   group-hover:scale-105">
-
-                        <div class="absolute inset-0
-                                   bg-gradient-to-t
-                                   from-slate-950/80
-                                   via-transparent
-                                   to-transparent">
-                        </div>
-
-                        <div class="absolute
-                                   bottom-0
-                                   left-0
-                                   p-5">
-
-                            <p class="text-sm
-                                       font-semibold
-                                       text-white">
-
-                                Nas ondas do Pico
-
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-
-                    <!-- FOTO 3 -->
-
-                    <div class="group relative
-                               h-[250px]
-                               overflow-hidden
-                               rounded-2xl
-                               border border-white/10
-                               bg-slate-800">
-
-                        <img src="./src/img/.png" alt="Surfistas no Pico de Matinhos" class="w-full h-full
-                                   object-cover
-                                   transition duration-700
-                                   group-hover:scale-105">
-
-                        <div class="absolute inset-0
-                                   bg-gradient-to-t
-                                   from-slate-950/80
-                                   via-transparent
-                                   to-transparent">
-                        </div>
-
-                        <div class="absolute
-                                   bottom-0
-                                   left-0
-                                   p-5">
-
-                            <p class="text-sm
-                                       font-semibold
-                                       text-white">
-
-                                Gerações de surfistas
-
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
+        <div class="max-w-5xl mx-auto
+                px-6 py-16 md:py-20">
 
 
             <!-- ================================================= -->
-            <!-- FRASE FINAL -->
+            <!-- CABEÇALHO -->
             <!-- ================================================= -->
 
-            <div class="mt-10
-                       flex flex-col
-                       sm:flex-row
-                       sm:items-center
-                       sm:justify-between
-                       gap-4
-                       border-t
-                       border-white/10
-                       pt-6">
+            <div class="max-w-3xl mx-auto
+                    text-center mb-12">
 
-                <p class="text-sm text-blue-100/60">
+                <p class="text-xs sm:text-sm
+                      font-bold
+                      uppercase
+                      tracking-[0.25em]
+                      text-amber-500
+                      mb-3">
 
-                    Pico de Matinhos · Praia Central
+                    Sobre o projeto
 
                 </p>
 
 
-                <div class="flex items-center gap-2">
+                <h2 class="text-3xl sm:text-4xl
+                       font-bold
+                       text-slate-900
+                       leading-tight">
+                    A história por trás deste trabalho
+                </h2>
+                <p class="mt-5
+                      text-slate-600
+                      leading-relaxed
+                      max-w-2xl
+                      mx-auto">
+                    Este projeto busca registrar e apresentar a história do surfe
+                    em Matinhos, valorizando os atletas, os espaços e as gerações
+                    que ajudaram a construir a identidade do esporte na cidade.
+                </p>
+            </div>
+            <!-- ================================================= -->
+            <!-- TEXTO DO PROJETO -->
+            <!-- ================================================= -->
+            <div class="grid
+                    grid-cols-1
+                    md:grid-cols-2
+                    gap-8
+                    items-stretch">
+                <!-- TEXTO -->
+                <div class="relative
+                        rounded-2xl
+                        bg-white
+                        border border-slate-200
+                        shadow-sm
+                        p-7 sm:p-8">
+                    <!-- detalhe lateral -->
+                    <div class="absolute
+                            top-7
+                            left-0
+                            w-1
+                            h-16
+                            bg-amber-400
+                            rounded-r-full">
+                    </div>
+                    <p class="text-xs
+                          uppercase
+                          tracking-[0.2em]
+                          font-bold
+                          text-amber-500
+                          mb-3">
+                        A proposta
+                    </p>
+                    <h3 class="text-2xl
+                           font-bold
+                           text-slate-900
+                           mb-5">
+                        Preservar uma história que continua sendo escrita
+                    </h3>
+                    <div class="space-y-4
+                            text-slate-600
+                            leading-relaxed">
+                        <p>
+                            O surfe faz parte da identidade cultural de Matinhos.
+                            Ao longo das décadas, diferentes gerações de surfistas
+                            ajudaram a transformar o município em uma referência
+                            do esporte no litoral do Paraná.
+                        </p>
+                        <p>
+                            A proposta deste projeto é reunir parte dessa história
+                            em um espaço digital, apresentando personagens,
+                            lugares e momentos importantes para compreender a
+                            relação entre Matinhos e o surfe.
+                        </p>
+                        <p>
+                            Mais do que contar sobre o esporte, o projeto busca
+                            valorizar a memória local e mostrar como diferentes
+                            gerações contribuíram para construir esse legado.
+                        </p>
+                    </div>
+                    <!-- linha decorativa -->
+                    <div class="flex items-center gap-3
+                            mt-7">
+                        <span class="w-10 h-px bg-amber-400"></span>
+                        <span class="text-xs
+                                 uppercase
+                                 tracking-widest
+                                 font-semibold
+                                 text-slate-400">
+                            Surfe · Memória · Cultura
+                        </span>
+                    </div>
+                </div>
+                <!-- DESTAQUE -->
+                <div class="relative
+                        overflow-hidden
+                        rounded-2xl
+                        bg-slate-900
+                        text-white
+                        p-7 sm:p-8
+                        shadow-xl">
+                    <!-- brilho -->
+                    <div class="absolute
+                            -top-24
+                            -right-24
+                            w-64
+                            h-64
+                            rounded-full
+                            bg-amber-400/10
+                            blur-3xl">
+                    </div>
+                    <div class="relative">
+                        <span class="inline-flex
+                                 items-center
+                                 justify-center
+                                 w-11 h-11
+                                 rounded-xl
+                                 bg-amber-400/10
+                                 border border-amber-400/20
+                                 text-amber-400
+                                 mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                                stroke="currentColor" class="w-6 h-6 text-amber-400">
+                                <circle cx="12" cy="12" r="9" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v8M8 12h8" />
+                            </svg>
+                        </span>
+                        <p class="text-xs
+                              uppercase
+                              tracking-[0.25em]
+                              font-bold
+                              text-amber-400
+                              mb-3">
+                            Um projeto sobre identidade
+                        </p>
+                        <h3 class="text-2xl
+                               font-bold
+                               mb-5">
+                            Matinhos através das gerações
+                        </h3>
+                        <p class="text-blue-100/70
+                              leading-relaxed">
+                            Do surgimento dos primeiros surfistas aos novos
+                            talentos, esta pesquisa procura mostrar como o surfe
+                            se tornou parte da história e da cultura de Matinhos.
+                        </p>
+                        <div class="mt-8
+                                pt-6
+                                border-t
+                                border-white/10">
+                            <div class="grid
+                                    grid-cols-2
+                                    gap-4">
+                                <div>
+                                    <p class="text-2xl
+                                          font-bold
+                                          text-white">
+                                        01
+                                    </p>
+                                    <p class="mt-1
+                                          text-xs
+                                          uppercase
+                                          tracking-wider
+                                          text-blue-100/50">
+                                        Projeto
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="text-2xl
+                                          font-bold
+                                          text-white">
+                                        PR
+                                    </p>
+                                    <p class="mt-1
+                                          text-xs
+                                          uppercase
+                                          tracking-wider
+                                          text-blue-100/50">
+                                        Litoral
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ================================================= -->
+            <!-- PDF -->
+            <!-- ================================================= -->
+            <div class="mt-14">
+                <div class="flex flex-col
+                        sm:flex-row
+                        sm:items-end
+                        sm:justify-between
+                        gap-4
+                        mb-6">
+                    <div>
+                        <p class="text-xs
+                              uppercase
+                              tracking-[0.25em]
+                              font-bold
+                              text-amber-500
+                              mb-2">
+                            Documento do projeto
+                        </p>
+                        <h3 class="text-2xl sm:text-3xl
+                               font-bold
+                               text-slate-900">
+                            Projeto completo
+                        </h3>
+                    </div>
+                    <p class="text-sm
+                          text-slate-500
+                          max-w-sm
+                          sm:text-right">
+                        Consulte abaixo o documento completo utilizado
+                        como base para este trabalho.
+                    </p>
+                </div>
+                <!-- CONTAINER DO PDF -->
+                <div class="relative
+                        overflow-hidden
+                        rounded-2xl
+                        bg-slate-900
+                        border border-slate-200
+                        shadow-xl">
+                    <!-- barra superior -->
+                    <div class="h-1
+                            bg-gradient-to-r
+                            from-amber-400
+                            via-yellow-300
+                            to-amber-400">
+                    </div>
+                    <!-- cabeçalho do PDF -->
+                    <div class="flex flex-col
+                            sm:flex-row
+                            sm:items-center
+                            sm:justify-between
+                            gap-3
+                            px-5 py-4
+                            bg-slate-900
+                            border-b
+                            border-white/10">
+                        <div class="flex items-center gap-3">
+                            <div class="flex
+                                    items-center
+                                    justify-center
+                                    w-9 h-9
+                                    rounded-lg
+                                    bg-amber-400/10
+                                    border border-amber-400/20">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.8" stroke="currentColor" class="w-4 h-4 text-amber-400">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A2.625 2.625 0 0112 5.625v-1.5A3.375 3.375 0 008.625.75H6.75A3.75 3.75 0 003 4.5v15A3.75 3.75 0 006.75 23.25h10.5A3.75 3.75 0 0021 19.5v-2.25" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-sm
+                                      font-semibold
+                                      text-white">
+                                    Documento do projeto
+                                </p>
+                                <p class="text-xs
+                                      text-slate-400">
+                                    PDF
+                                </p>
+                            </div>
+                        </div>
+                        <!-- botão abrir -->
+                        <a href="./src/docs/projeto.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex
+                              items-center
+                              justify-center
+                              gap-2
+                              px-4 py-2
+                              rounded-lg
+                              bg-amber-400
+                              hover:bg-amber-300
+                              text-slate-900
+                              text-sm
+                              font-bold
+                              transition-colors">
+                            Abrir PDF
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="w-4 h-4">
+                                <path fill-rule="evenodd"
+                                    d="M5.22 14.78a.75.75 0 001.06 0l6.47-6.47v5.94a.75.75 0 001.5 0V6.5a.75.75 0 00-.75-.75H7.56a.75.75 0 000 1.5h5.94l-6.47 6.47a.75.75 0 000 1.06Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                    <!-- visualizador -->
+                    <div class="bg-slate-800
+                            p-2 sm:p-3">
+                        <iframe src="./src/docs/projeto.pdf" class="w-full
+                               h-[500px]
+                               sm:h-[650px]
+                               rounded-lg
+                               bg-white" title="Projeto — História do Surfe em Matinhos">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    <span class="w-8 h-px
-                               bg-amber-400">
+    <!-- ========================================================= -->
+<!-- FOOTER -->
+<!-- ========================================================= -->
+
+<footer class="relative bg-slate-950 text-blue-100 overflow-hidden">
+
+    <!-- brilho decorativo -->
+
+    <div class="absolute
+                -top-32
+                left-1/2
+                -translate-x-1/2
+                w-96 h-96
+                rounded-full
+                bg-amber-400/5
+                blur-3xl">
+    </div>
+
+
+    <div class="relative max-w-6xl mx-auto px-6">
+
+
+        <!-- ================================================= -->
+        <!-- FRASE FINAL -->
+        <!-- ================================================= -->
+
+        <div class="py-14 md:py-16
+                    border-b border-white/10">
+
+            <div class="max-w-3xl">
+
+                <div class="flex items-center gap-3 mb-5">
+
+                    <span class="w-10 h-px bg-amber-400"></span>
+
+                    <span class="text-xs
+                                 uppercase
+                                 tracking-[0.3em]
+                                 font-bold
+                                 text-amber-400">
+
+                        Matinhos · Paraná
+
+                    </span>
+
+                </div>
+
+
+                <h2 class="text-3xl
+                           sm:text-4xl
+                           md:text-5xl
+                           font-bold
+                           text-white
+                           leading-tight">
+
+                    Uma história que continua
+                    <span class="text-amber-400">nas ondas.</span>
+
+                </h2>
+
+
+                <p class="mt-5
+                          max-w-2xl
+                          text-sm sm:text-base
+                          leading-relaxed
+                          text-blue-100/60">
+
+                    Este projeto registra parte da história do surfe em
+                    Matinhos, valorizando os lugares, as pessoas e as
+                    diferentes gerações que ajudaram a construir essa
+                    cultura.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================================================= -->
+        <!-- CONTEÚDO DO FOOTER -->
+        <!-- ================================================= -->
+
+        <div class="py-10
+                    grid
+                    grid-cols-1
+                    md:grid-cols-3
+                    gap-10">
+
+
+            <!-- MARCA -->
+
+            <div>
+
+                <a href="#"
+                   class="inline-block
+                          text-lg
+                          font-extrabold
+                          tracking-wide
+                          text-amber-400
+                          hover:text-amber-300
+                          transition-colors">
+
+                    MATINHOS · PR
+
+                </a>
+
+
+                <p class="mt-3
+                          text-sm
+                          leading-relaxed
+                          text-blue-100/50
+                          max-w-xs">
+
+                    A história do surfe em Matinhos através de
+                    diferentes gerações.
+
+                </p>
+
+            </div>
+
+
+            <!-- NAVEGAÇÃO -->
+
+            <div>
+
+                <p class="text-xs
+                          uppercase
+                          tracking-[0.2em]
+                          font-bold
+                          text-white
+                          mb-4">
+
+                    Explorar
+
+                </p>
+
+
+                <nav class="flex flex-col gap-3
+                            text-sm">
+
+                    <a href="#documentario"
+                       class="text-blue-100/50
+                              hover:text-amber-400
+                              transition-colors">
+
+                        Documentário
+
+                    </a>
+
+
+                    <a href="#pico"
+                       class="text-blue-100/50
+                              hover:text-amber-400
+                              transition-colors">
+
+                        O Pico
+
+                    </a>
+
+
+                    <a href="#antiga-geracao"
+                       class="text-blue-100/50
+                              hover:text-amber-400
+                              transition-colors">
+
+                        Gerações
+
+                    </a>
+
+
+                    <a href="#projeto"
+                       class="text-blue-100/50
+                              hover:text-amber-400
+                              transition-colors">
+
+                        Sobre o projeto
+
+                    </a>
+
+                </nav>
+
+            </div>
+
+
+            <!-- PROJETO -->
+
+            <div>
+
+                <p class="text-xs
+                          uppercase
+                          tracking-[0.2em]
+                          font-bold
+                          text-white
+                          mb-4">
+
+                    Sobre
+
+                </p>
+
+
+                <p class="text-sm
+                          leading-relaxed
+                          text-blue-100/50">
+
+                    Um projeto dedicado à memória,
+                    cultura e história do surfe no litoral
+                    paranaense.
+
+                </p>
+
+
+                <div class="flex items-center gap-2 mt-5">
+
+                    <span class="w-2 h-2
+                                 rounded-full
+                                 bg-amber-400">
                     </span>
 
                     <span class="text-xs
-                               uppercase
-                               tracking-widest
-                               font-semibold
-                               text-amber-400">
+                                 uppercase
+                                 tracking-widest
+                                 text-blue-100/40">
 
                         Surfe · Cultura · História
 
@@ -768,139 +1350,47 @@
 
         </div>
 
-    </section>
+
+        <!-- ================================================= -->
+        <!-- COPYRIGHT -->
+        <!-- ================================================= -->
+
+        <div class="py-5
+                    border-t border-white/10
+                    flex flex-col
+                    sm:flex-row
+                    sm:items-center
+                    sm:justify-between
+                    gap-3">
+
+            <p class="text-xs
+                      text-blue-100/30">
+
+                © 2026 · Projeto História do Surfe em Matinhos
+
+            </p>
 
 
+            <p class="text-xs
+                      text-blue-100/30">
 
-    <!-- ========================================================= -->
-    <!-- NOMES -->
-    <!-- ========================================================= -->
-
-    <section id="nomes" class="max-w-4xl mx-auto
-               px-6 py-16">
-
-
-        <h2 class="text-sm font-bold
-                   uppercase
-                   tracking-widest
-                   text-amber-500
-                   mb-2">
-
-            Ídolos locais
-
-        </h2>
-
-
-        <h3 class="text-3xl font-bold
-                   text-slate-900
-                   mb-6">
-
-            Gente que colocou Matinhos no mapa
-
-        </h3>
-
-
-        <p class="mb-4">
-
-            Matinhos é conhecida como "celeiro" do surfe paranaense —
-            uma cidade pequena que formou nomes de peso no esporte nacional.
-            Um dos nomes mais conhecidos é
-
-            <strong class="text-amber-600">
-                Peterson Rosa
-            </strong>,
-
-            tricampeão brasileiro de surfe, cuja trajetória inspirou gerações
-            de surfistas locais a levarem o esporte a sério.
-
-        </p>
-
-
-        <p>
-
-            Hoje, projetos como a escola
-
-            <strong class="text-amber-600">
-                Ondas do Saber
-            </strong>
-
-            seguem esse legado, usando o surfe como ferramenta pedagógica
-            para crianças e adolescentes da região.
-
-        </p>
-
-    </section>
-
-
-
-    <!-- ========================================================= -->
-    <!-- HOJE -->
-    <!-- ========================================================= -->
-
-    <section id="hoje" class="bg-amber-400
-               text-slate-900">
-
-        <div class="max-w-4xl mx-auto
-                   px-6 py-16
-                   text-center">
-
-
-            <h2 class="text-sm font-bold
-                       uppercase
-                       tracking-widest
-                       text-slate-800
-                       mb-2">
-
-                O futuro
-
-            </h2>
-
-
-            <h3 class="text-3xl
-                       font-bold
-                       mb-4">
-
-                Matinhos, referência olímpica
-
-            </h3>
-
-
-            <p class="max-w-2xl mx-auto">
-
-                Com o surfe consolidado como esporte olímpico,
-                Matinhos segue investindo em infraestrutura e em projetos
-                para formar as próximas gerações de atletas.
+                Ensino Médio Integrado Sesc Senac · Matinhos-PR
 
             </p>
 
         </div>
 
-    </section>
 
+    </div>
 
-
-    <!-- ========================================================= -->
-    <!-- FOOTER -->
-    <!-- ========================================================= -->
-
-    <footer class="bg-slate-900
-               text-slate-400
-               text-center
-               text-xs
-               py-6 px-6">
-
-        Sistema Sesc/Senac · Litoral do Paraná
-
-    </footer>
+</footer>
 
 
 
     <!-- ========================================================= -->
     <!-- JAVASCRIPT -->
     <!-- ========================================================= -->
-
     <script src="./src/script.js"></script>
-
 </body>
 
 </html>
